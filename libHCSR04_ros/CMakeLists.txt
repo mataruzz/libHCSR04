@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(libHCSR04_ros)
+project(lib_hcsr04_ros)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -12,7 +12,7 @@ find_package(sensor_msgs REQUIRED)
 
 # Include the headers from libHCSR04
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../libHCSR04/include)
-# and libHCSR04_ros
+# and lib_hcsr04_ros
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Create an executable for your wrapper
